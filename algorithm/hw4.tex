@@ -1,0 +1,28 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\title{Homework}
+\author{Farzad Sadeghi}
+\date{1400/02/30}
+
+\begin{document}
+\maketitle
+\section{Problem 1}
+
+(a/b)-c+d*e-(a*e)\\
+infix to postfix?\\
+infix to prefix?\\
+\begin{equation*}
+  (a/b)-c+d*e-(a*e) = ((((a/b)-c)+(d*e))-(a*e))
+\end{equation*}
+infix to postfix:\\
+\begin{equation*}
+  ((((a/b)-c)+(d*e))-(a*e)) = ((((a/b)^/-c)^-+(d*e)^*)^+-(a*e)^*)^- = \underline{\bf a,b,/,c,-,d,e,*,+,a,e,*,-}
+\end{equation*}
+infix to prefix:\\
+\begin{equation*}
+  ((((a/b)-c)+(d*e))-(a*e)) = {}^-({}^+({}^-({}^/(a/b)-c)+{}^*(d*e))-{}^*(a*e)) = \underline{\bf -,+,-,/,a,b,c,*,d,e,*,a,e}
+\end{equation*}
+
+\end{document}
